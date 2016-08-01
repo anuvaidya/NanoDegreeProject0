@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffdfeaf1"
+        android:theme="@style/AppTheme"
+        android:statusBarColor = "@color/colorPrimaryDark"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="ex.myappportfolio.MainActivity"
+    >
+
+    <!-- Load the toolbar here -->
+    <include
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_title"
+        android:id="@+id/my_title"
+        style="@style/Button.TitleText"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffdfeaf1"
+        android:gravity="center_horizontal"
+        android:layout_alignStart="@id/my_title"
+        android:layout_alignEnd="@id/my_title"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="62dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/popular_movies"
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColorBackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_hawk"
+            android:id="@+id/button2"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/button1"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColorBackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/build_it_bigger"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColorBackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/make_your_app_material"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColorBackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_ubiquitous"
+            android:id="@+id/button5"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColorBackground"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/capstone"
+            android:id="@+id/button6"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:background="@color/btnColorBackground"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+<!--
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="ex.myappportfolio.MainActivity">
+
+
+</android.support.design.widget.AppBarLayout>
+-->
